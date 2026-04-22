@@ -2,5 +2,7 @@
 pkgs.mkShell {
   buildInputs = [
     pkgs.prettier
+    pkgs.unzip
+    pkgs.zip
   ];
 }
