@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exploración y Cultura</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="nav-container">
+        <div class="logo">mini-web</div>
+        <ul class="menu">
+          <li><a href="#pais">País</a></li>
+          <li><a href="#artista">Artista</a></li>
+          <li><a href="#serie">Serie</a></li>
+          <li><a href="#receta">Receta</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <header>
+      <h1>Mini Web</h1>
+    </header>
+
+    <main>
+      <section id="pais">
+        <h2>1. País: Nueva Zelanda</h2>
+        <p>
+          Nueva Zelanda es un país soberano insular ubicado en Oceanía,
+          localizado en el suroeste del océano Pacífico, cerca de Australia y
+          constituido en una monarquía parlamentaria. Está formado por dos
+          grandes islas: la isla Norte y la isla Sur, junto a un gran número de
+          islas menores, destacándose entre ellas la isla Stewart y las islas
+          Chatham. El Reino de Nueva Zelanda también incluye las islas Cook y
+          Niue (estados autónomos en libre asociación), el archipiélago Tokelau
+          y la dependencia antártica Ross. La capital de Nueva Zelanda es la
+          ciudad de Wellington, situada en la isla Norte.
+        </p>
+        <img
+          src="https://res.cloudinary.com/worldpackers/image/upload/c_limit,f_auto,q_auto,w_1140/kq0hh7m5vpievwtxoaou"
+          alt="Nueva Zelanda"
+        />
+
+        <br />
+        <button onclick="mostrarOcultarInfo('infoPais')">
+          Mostrar / Ocultar Datos
+        </button>
+
+        <div id="infoPais" class="oculto">
+          <h3>Datos Generales</h3>
+          <table>
+            <tr>
+              <th>Capital</th>
+              <th>Población</th>
+              <th>Idioma Principal</th>
+              <th>Moneda</th>
+            </tr>
+            <tr>
+              <td>Wellington</td>
+              <td>~5.1 millones</td>
+              <td>Inglés y Maorí</td>
+              <td>Dólar neozelandés</td>
+            </tr>
+          </table>
+        </div>
+
+        <h3>Turismo</h3>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/Atf_Af1q_5w?si=jhUhxAiIKVfwco1H"
+          title="YouTube video player"
+          frameborder="0"
+          allow="
+            accelerometer;
+            autoplay;
+            clipboard-write;
+            encrypted-media;
+            gyroscope;
+            picture-in-picture;
+            web-share;
+          "
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </section>
+
+      <section id="artista">
+        <h2>2. Artista: Florence + The Machine</h2>
+        <p>
+          Florence + The Machine es una banda británica de indie rock liderada
+          por Florence Welch, reconocida por su estilo excéntrico, su potente
+          voz y su estética bohemia.
+        </p>
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/f/f5/Florence_Machine_%28Florence_Welch%29.jpg"
+          alt="Florence Welch"
+        />
+
+        <a href="https://florenceandthemachine.net/" target="_blank"
+          >Visitar Sitio Oficial del Artista</a
+        >
+
+        <h3>Canciones Destacadas</h3>
+        <ul id="listaCanciones">
+          <li>Dog Days Are Over</li>
+          <li>Shake It Out</li>
+          <li>You've Got the Love</li>
+        </ul>
+        <button onclick="resaltarCanciones()">Resaltar Canciones</button>
+
+        <h3>Presentación en Vivo</h3>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/ui8kUKuLBaU?si=vy4LzR2ImMvUdc90"
+          title="YouTube video player"
+          frameborder="0"
+          allow="
+            accelerometer;
+            autoplay;
+            clipboard-write;
+            encrypted-media;
+            gyroscope;
+            picture-in-picture;
+            web-share;
+          "
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+        <br /><br />
+      </section>
+
+      <section id="serie">
+        <h2>3. Serie: Dark</h2>
+        <p>
+          Un aclamado thriller de ciencia ficción alemán que explora las
+          paradojas del viaje en el tiempo y las conexiones intergeneracionales
+          de cuatro familias en el pueblo de Winden.
+        </p>
+        <img
+          src="https://posterspy.com/wp-content/uploads/2021/09/Final2-1.jpg"
+          alt="Dark"
+        />
+
+        <h3>Personajes Clave</h3>
+        <ul>
+          <li>Jonas Kahnwald</li>
+          <li>Martha Nielsen</li>
+          <li>Ulrich Nielsen</li>
+        </ul>
+
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/ESEUoa-mz2c?si=VC82wXNZQk4p75OG"
+          title="YouTube video player"
+          frameborder="0"
+          allow="
+            accelerometer;
+            autoplay;
+            clipboard-write;
+            encrypted-media;
+            gyroscope;
+            picture-in-picture;
+            web-share;
+          "
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </section>
+
+      <section id="receta">
+        <h2>4. Receta: Tarta de Manzana</h2>
+        <p>
+          Un postre clásico y hogareño, perfecto para las tardes de otoño,
+          caracterizado por su relleno de manzanas especiadas y masa crujiente.
+        </p>
+        <img
+          src="https://recetinas.com/wp-content/uploads/2020/02/tarta-de-manzana-americana.jpg"
+          alt="Tarta de Manzana"
+        />
+
+        <h3>Ingredientes</h3>
+        <ul>
+          <li>2 láminas de masa quebrada</li>
+          <li>6 manzanas peladas y cortadas</li>
+          <li>150g de azúcar y canela al gusto</li>
+        </ul>
+
+        <h3>Pasos de Preparación</h3>
+        <ol>
+          <li>Precalentar el horno a 200°C.</li>
+          <li>Mezclar las manzanas troceadas con el azúcar y la canela.</li>
+          <li>
+            Colocar una base de masa en un molde, verter el relleno y tapar con
+            la segunda masa.
+          </li>
+          <li>Hornear por 45 minutos hasta dorar la cubierta.</li>
+        </ol>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy;.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
