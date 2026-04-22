@@ -1,0 +1,243 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.app {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  text-align: center;
+  color: white;
+  margin-bottom: 30px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 350px 1fr;
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.btn {
+  width: 100%;
+  padding: 12px;
+  margin: 5px 0;
+  border: none;
+  border-radius: 8px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-weight: 600;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn.primary {
+  background: #667eea;
+  color: white;
+}
+.btn.success {
+  background: #48bb78;
+  color: white;
+}
+.btn.secondary {
+  background: #ed8936;
+  color: white;
+}
+
+.breed-section {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 2px solid #f0f0f0;
+}
+
+input[list] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 2px solid #e2e8f0;
+  border-radius: 8px;
+  font-family: inherit;
+}
+
+.debug {
+  margin-top: 20px;
+  font-size: 0.9em;
+}
+
+.code {
+  background: #2d3748;
+  color: #a0aec0;
+  padding: 10px;
+  border-radius: 5px;
+  font-family: "Courier New", monospace;
+  font-size: 0.8em;
+  overflow-x: auto;
+  margin: 10px 0;
+}
+
+.results-panel {
+  background: white;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.dog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+  min-height: 300px;
+}
+
+.dog-card {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.dog-card:hover {
+  transform: scale(1.05);
+}
+
+.dog-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+.placeholder {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 100px 20px;
+  background: #f7fafc;
+  border-radius: 10px;
+  color: #a0aec0;
+}
+
+.loading {
+  text-align: center;
+  padding: 50px;
+  color: #718096;
+  grid-column: 1 / -1;
+}
+
+.error {
+  color: #e53e3e;
+  padding: 20px;
+  text-align: center;
+  background: #fed7d7;
+  border-radius: 8px;
+  grid-column: 1 / -1;
+}
+
+.dog-card {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+}
+
+.dog-card:hover {
+  transform: scale(1.03);
+}
+
+.dog-card header {
+  background: #f7fafc;
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.dog-card header h3 {
+  font-size: 1.1em;
+  color: #2d3748;
+  text-transform: capitalize;
+}
+
+.dog-card figure {
+  margin: 0;
+  padding: 0;
+}
+
+abbr[title] {
+  text-decoration: none;
+  cursor: help;
+  display: block;
+}
+
+.dog-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+.dog-card figcaption {
+  padding: 8px;
+  text-align: center;
+  font-size: 0.85em;
+  color: #718096;
+  font-style: italic;
+  background: #fdfdfd;
+}
+
+.dog-card details {
+  padding: 10px 15px;
+  background: #f7fafc;
+  border-top: 1px solid #e2e8f0;
+  font-size: 0.9em;
+  color: #4a5568;
+}
+
+.dog-card summary {
+  cursor: pointer;
+  font-weight: 600;
+  color: #667eea;
+  outline: none;
+}
+
+.details-content {
+  margin-top: 10px;
+  line-height: 1.5;
+}
+
+.dog-card footer {
+  margin-top: auto;
+  padding: 12px;
+  background: #edf2f7;
+  text-align: center;
+  font-weight: bold;
+  color: #4a5568;
+  text-transform: capitalize;
+}
