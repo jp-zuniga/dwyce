@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TechStore - Accesorios y Electrónica</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>TechStore</h1>
+    </header>
+
+    <nav>
+      <a href="#inicio">Inicio</a>
+      <a href="#productos">Productos</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+
+    <div class="container" id="inicio">
+      <h2>Potencia tu setup</h2>
+      <p>
+        Encuentra los mejores periféricos, componentes y accesorios electrónicos
+        para llevar tu productividad y gaming al siguiente nivel.
+      </p>
+    </div>
+
+    <div class="container" id="productos">
+      <h2>Nuestros Productos</h2>
+      <div class="productos">
+        <div class="producto">
+          <img
+            src="https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?auto=format&fit=crop&w=400&q=80"
+            alt="Mouse ergonómico negro"
+          />
+          <h3>Mouse Inalámbrico Pro</h3>
+          <p>
+            Precisión láser, diseño ergonómico y batería de larga duración para
+            jornadas intensas.
+          </p>
+          <button onclick="comprar()">Comprar</button>
+        </div>
+
+        <div class="producto">
+          <img
+            src="https://images.unsplash.com/photo-1595225476474-87563907a212?auto=format&fit=crop&w=400&q=80"
+            alt="Teclado mecánico con luces RGB"
+          />
+          <h3>Teclado Mecánico RGB</h3>
+          <p>
+            Switches táctiles de alta velocidad y retroiluminación
+            personalizable para tu escritorio.
+          </p>
+          <button onclick="comprar()">Comprar</button>
+        </div>
+
+        <div class="producto">
+          <img
+            src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=400&q=80"
+            alt="Audífonos tipo diadema color oscuro"
+          />
+          <h3>Audífonos Noise Cancelling</h3>
+          <p>
+            Aislamiento acústico perfecto y audio de alta fidelidad. Ideales
+            para música o trabajo.
+          </p>
+          <button onclick="comprar()">Comprar</button>
+        </div>
+
+        <div class="producto">
+          <img
+            src="https://images.unsplash.com/photo-1583863788434-e58a36330cf0?auto=format&fit=crop&w=400&q=80"
+            alt="Cargador y cables USB sobre una mesa"
+          />
+          <h3>Cargador Rápido 65W</h3>
+          <p>
+            Carga tu laptop, celular o tablet en tiempo récord con tecnología de
+            nitruro de galio (GaN).
+          </p>
+          <button onclick="comprar()">Comprar</button>
+        </div>
+
+        <div class="producto">
+          <img
+            src="https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?auto=format&fit=crop&w=400&q=80"
+            alt="Monitor de computadora en un escritorio"
+          />
+          <h3>Monitor UltraWide 34"</h3>
+          <p>
+            Amplía tu visión con resolución 4K y colores vibrantes. Perfecto
+            para edición y gaming.
+          </p>
+          <button onclick="comprar()">Comprar</button>
+        </div>
+
+        <div class="producto">
+          <img
+            src="https://images.unsplash.com/photo-1590602847861-f357a9332bbc?auto=format&fit=crop&w=400&q=80"
+            alt="Micrófono de condensador profesional"
+          />
+          <h3>Micrófono de Condensador</h3>
+          <p>
+            Audio cristalino para tus videollamadas, streams o grabaciones de
+            podcasts.
+          </p>
+          <button onclick="comprar()">Comprar</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="container" id="contacto">
+      <h2>Soporte y Contacto</h2>
+      <form
+        onsubmit="
+          event.preventDefault();
+          validarFormulario();
+        "
+      >
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" placeholder="Ingresa tu nombre" />
+
+        <label for="correo">Correo Electrónico:</label>
+        <input type="text" id="correo" placeholder="tu@email.com" />
+
+        <label for="mensaje">Consulta o Mensaje:</label>
+        <textarea
+          id="mensaje"
+          rows="4"
+          placeholder="¿Necesitas ayuda con tu equipo?"
+        ></textarea>
+
+        <button type="submit">Enviar Mensaje</button>
+      </form>
+    </div>
+
+    <footer>
+      <p>&copy; 2026 TechStore. Tu tienda de electrónica de confianza.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
